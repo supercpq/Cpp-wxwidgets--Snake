@@ -1,0 +1,8 @@
+// 提示文件帮助 Visual Studio IDE 解释 Visual C++ 标识符,
+// 如函数和宏的名称。
+// 有关详细信息，请参见 https://go.microsoft.com/fwlink/?linkid=865984
+#define NULL
+#define NULL ((void *)0)
+#define wxEND_EVENT_TABLE() wxDECLARE_EVENT_TABLE_TERMINATOR() };
+#define wxBEGIN_EVENT_TABLE(theClass, baseClass) const wxEventTable theClass::sm_eventTable = { &baseClass::sm_eventTable, &theClass::sm_eventTableEntries[0] }; const wxEventTable *theClass::GetEventTable() const { return &theClass::sm_eventTable; } wxEventHashTable theClass::sm_eventHashTable(theClass::sm_eventTable); wxEventHashTable &theClass::GetEventHashTable() const { return theClass::sm_eventHashTable; } const wxEventTableEntry theClass::sm_eventTableEntries[] = {
+#define wxIMPLEMENT_APP(appname) wxIMPLEMENT_WX_THEME_SUPPORT wxIMPLEMENT_APP_NO_THEMES(appname)
